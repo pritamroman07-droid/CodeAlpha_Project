@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="taskone.css">
+</head>
+<body>
+
+<h1>Your Gallery</h1>
+
+<div class="gallery">
+  <img src="https://i.pinimg.com/736x/47/d3/7a/47d37aca5580b8e62f98821db9dc2641.jpg" onclick="openLightbox(0)">
+  <img src="https://i.pinimg.com/736x/cd/cb/4e/cdcb4e601904e59154791b755525956e.jpg" onclick="openLightbox(1)">
+  <img src="https://i.pinimg.com/736x/39/b3/99/39b3999ea5961a40c003da8791049780.jpg" onclick="openLightbox(2)">
+  <img src="https://i.pinimg.com/1200x/9b/2b/f1/9b2bf1d3dba75bed527e79664b7d3864.jpg" onclick="openLightbox(3)">
+  
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="close" onclick="closeLightbox()">×</span>
+  <img id="lightbox-img">
+  <button class="prev" onclick="changeImage(-1)">❮</button>
+  <button class="next" onclick="changeImage(1)">❯</button>
+</div>
+
+<script src="task1js.js"></script>
+</body>
+</html>
